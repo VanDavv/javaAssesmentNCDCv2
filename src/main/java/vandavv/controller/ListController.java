@@ -25,12 +25,6 @@ public class ListController {
 
         List<Book> bookList = new ArrayList<>();
         bookRepository.findAll().forEach(bookList::add);
-//                Arrays.asList(
-//                        new Book("Altuğ B. Altıntaş", "Java ve Yazılım Tasarımı", 35),
-//                        new Book("Rahman Usta", "Java Mimarisiyle Kurumsal Çözümler", 23),
-//                        new Book("Rifat Çölkesen", "Veri Yapıları ve Algoritmalar", 40),
-//                        new Book("Rifat Çölkesen", "Veri Yapıları ve Algoritmalar", 40)
-//                );
 
         modelAndView.addObject("books", bookList);
 
