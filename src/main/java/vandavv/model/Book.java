@@ -1,9 +1,15 @@
 package vandavv.model;
 
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Book {
+    @Id
+    private Integer ISBN;
     private String author;
     private String title;
-    private Integer ISBN;
 
     public Book(String author, String title, Integer ISBN) {
         this.author = author;

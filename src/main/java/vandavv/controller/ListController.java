@@ -14,8 +14,9 @@ public class ListController {
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public ModelAndView index() {
+
         ModelAndView modelAndView = new ModelAndView();
-        modelAndView.setViewName("home");
+        modelAndView.setViewName("list");
 
         List<Book> bookList =
                 Arrays.asList(
