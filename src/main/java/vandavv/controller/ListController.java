@@ -13,7 +13,7 @@ import java.util.List;
 public class ListController {
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
-    public ModelAndView index() {
+    public ModelAndView list() {
 
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("list");
